@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  base: &base
+    build: .
+    container_name: serialport
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    environment:
+      - TZ=Europe/Berlin
+      - DEBUG=serialport*
+    privileged: true
+
+  v9:
+    <<: *base
+    build:
+      context: ./v9
+      args:
+        SP_VER: "9"
+
+  v10:
+    <<: *base
+    build:
+      context: ./v10
+      args:
+        SP_VER: "10"

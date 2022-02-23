@@ -1,0 +1,22 @@
+{
+  "name": "serialport-docker-rpi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avakarev/serialport-docker-rpi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avakarev/serialport-docker-rpi/issues"
+  },
+  "homepage": "https://github.com/avakarev/serialport-docker-rpi#readme",
+  "dependencies": {
+    "serialport": "^10.3.0"
+  }
+}
